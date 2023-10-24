@@ -1,0 +1,57 @@
+
+.image_skills_container{
+    border: grey;
+    border-style: groove;
+    flex-direction: column;
+    gap: 50px;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image_skills_container > div{
+    width: 98%;
+}
+
+.tittle_skills_container{
+    padding-top: 50px ;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.skillContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.progressBarContainer{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--text-shadow-menu);
+    display: flex;
+    padding: 3px;
+    margin-left: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.progressBar{
+    width: 30%;
+    padding: 10px;
+    color: var(--color-button-switch);
+    transition: all 0.3s ease-out;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#basic_sql, #basic_js, #basic_git, #basic_react, #middle_html, #middle_css{
+    box-shadow: 1px 1px 15px 2px red;
+    border-radius: 20px;
+    background-color: var(--color-button-switch);
+    color: var(--text-shadow-menu);
+    transition: all 0.3s ease-out;
+}

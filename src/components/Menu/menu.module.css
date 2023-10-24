@@ -1,0 +1,143 @@
+.container_menu{
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.buttons_menu_container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.elements_menu_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.line_container{
+    background-color: grey;
+    width: 1px;
+}
+
+
+.a_container > a{
+    width: max-content;
+    color: var(--secondary-text);
+    font-size: 17px;
+    text-decoration-line: none;
+}
+
+.a_container{
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+a > img{
+    width: 18px;
+}
+
+.a_container > a:hover{
+    color: var(--text-shadow-menu);
+    text-shadow: 1px 1px 2px var(--text-shadow-menu);
+}
+
+.about_text{
+    margin: 10px;
+    text-decoration-line: none;
+}
+
+.container_buttons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.navBar{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end_menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links_buttons{
+    display: flex;
+    align-items: end;
+}
+
+.name_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.first_name{
+    color: var(--first-name);
+}
+
+.second_name{
+    color: var(--second-name);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.theme_button:after{
+    transition: all 0.5s ease-out;
+}
+
+.theme_button {
+  align-items: center;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,red 0 7px 13px -3px,var(--shadow-button) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: var(--color-button-switch);
+  background-color: var(--background-button);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.theme_button:hover {
+  transform: translateY(-1px);
+}
+
+.theme_button:active {
+  box-shadow: red 1px 1px 10px 1px inset;
+  transform: translateY(1px);
+}

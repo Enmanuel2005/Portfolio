@@ -23,7 +23,7 @@ const Skills = () => {
             <div className={styles.progressBar} id={styles.advanced_sql}>ADVANCED</div>
             <div className={styles.progressBar} id={styles.expert_sql}>EXPERT</div>
           </div>
-          <img src="/logos/sql-logo.png" alt="" style={{ width: "100px", marginLeft: "10px" }} />
+          <img src="/logos/sql-logo.png" alt="" style={{ width: "70px", marginLeft: "10px" }} />
         </div>
         <div className={styles.skillContainer} data-aos="zoom-in">
           <div className={styles.progressBarContainer}>
@@ -32,7 +32,7 @@ const Skills = () => {
             <div className={styles.progressBar} id={styles.advanced_js}>ADVANCED</div>
             <div className={styles.progressBar} id={styles.expert_js}>EXPERT</div>
           </div>
-          <img src="/logos/js-logo.png" alt="" style={{ width: "100px", marginLeft: "10px" }} />
+          <img src="/logos/js-logo.png" alt="" style={{ width: "70px", marginLeft: "10px" }} />
         </div>
         <div className={styles.skillContainer} data-aos="zoom-in">
           <div className={styles.progressBarContainer}>
@@ -41,7 +41,7 @@ const Skills = () => {
             <div className={styles.progressBar} id={styles.advanced_git}>ADVANCED</div>
             <div className={styles.progressBar} id={styles.expert_git}>EXPERT</div>
           </div>
-          <img src="/logos/github-logo.png" alt="" style={{ width: "100px", marginLeft: "15px" }} />
+          <img src="/logos/github-logo.png" alt="" style={{ width: "70px", marginLeft: "10px" }} />
         </div>
         <div className={styles.skillContainer} data-aos="zoom-in">
           <div className={styles.progressBarContainer}>
@@ -50,7 +50,7 @@ const Skills = () => {
             <div className={styles.progressBar} id={styles.advanced_react}>ADVANCED</div>
             <div className={styles.progressBar} id={styles.expert_react}>EXPERT</div>
           </div>
-          <img src="/logos/react-logo.png" alt="" style={{ width: "100px", marginLeft: "10px" }} />
+          <img src="/logos/react-logo.png" alt="" style={{ width: "70px", marginLeft: "10px" }} />
         </div>
         <div className={styles.skillContainer} data-aos="zoom-in">
           <div className={styles.progressBarContainer}>
@@ -59,7 +59,7 @@ const Skills = () => {
             <div className={styles.progressBar} id={styles.advanced_html}>ADVANCED</div>
             <div className={styles.progressBar} id={styles.expert_html}>EXPERT</div>
           </div>
-          <img src="/logos/html-logo.png" alt="" style={{ width: "100px", marginLeft: "10px" }} />
+          <img src="/logos/html-logo.png" alt="" style={{ width: "70px", marginLeft: "10px" }} />
         </div>
         <div className={styles.skillContainer} data-aos="zoom-in">
           <div className={styles.progressBarContainer}>
@@ -68,7 +68,7 @@ const Skills = () => {
             <div className={styles.progressBar} id={styles.advanced_css}>ADVANCED</div>
             <div className={styles.progressBar} id={styles.expert_css}>EXPERT</div>
           </div>
-          <img id='css_skill' src="/logos/css-logo.png" alt="" style={{ width: "100px", marginLeft: "10px" }} />
+          <img id='css_skill' src="/logos/css-logo.png" alt="" style={{ width: "70px", marginLeft: "10px" }} />
         </div>
       </div>
     </div>

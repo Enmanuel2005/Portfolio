@@ -25,7 +25,6 @@
 
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
     font-family: 'Roboto Mono', monospace;
 }
@@ -61,4 +60,8 @@ p {
 
 .section_about{
     padding: 30px;
+}
+
+#section_contact{
+    padding: 70px;
 }

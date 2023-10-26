@@ -16,7 +16,7 @@ const Projects = () => {
       </div>
       <div className={styles.images_projects_container}>
         <div className={styles.imageContainer} data-aos="flip-right">
-          <img src="/projects_images/calculadora_web.png" alt="" />
+          <img src="/projects_images/calculadora-web.png" alt="" />
           <div className={styles.tools}>
             <div className={styles.projectName}>
               <label htmlFor="" style={{ fontSize: "15px" }}>WEB CALCULATOR</label>
@@ -27,6 +27,106 @@ const Projects = () => {
               </div>
               <div className={styles.tool}>
                 <label htmlFor="">JS</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">CSS</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.imageContainer} data-aos="flip-right">
+          <img src="/projects_images/agenda-contactos-react.png" alt="" className={styles.project} />
+          <div className={styles.tools}>
+            <div className={styles.projectName}>
+              <label htmlFor="" style={{ fontSize: "15px" }}>CONTACT AGENDA</label>
+            </div>
+            <div className={styles.toolsContainer}>
+              <div className={styles.tool}>
+                <label htmlFor="">HTML</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">REACT</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">CSS</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.imageContainer} data-aos="flip-right">
+          <img src="/projects_images/agenda-contactos-react.png" alt="" className={styles.project} />
+          <div className={styles.tools}>
+            <div className={styles.projectName}>
+              <label htmlFor="" style={{ fontSize: "15px" }}>CONTACT AGENDA</label>
+            </div>
+            <div className={styles.toolsContainer}>
+              <div className={styles.tool}>
+                <label htmlFor="">HTML</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">REACT</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">CSS</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.imageContainer} data-aos="flip-right">
+          <img src="/projects_images/agenda-contactos-react.png" alt="" className={styles.project} />
+          <div className={styles.tools}>
+            <div className={styles.projectName}>
+              <label htmlFor="" style={{ fontSize: "15px" }}>CONTACT AGENDA</label>
+            </div>
+            <div className={styles.toolsContainer}>
+              <div className={styles.tool}>
+                <label htmlFor="">HTML</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">REACT</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">CSS</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.imageContainer} data-aos="flip-right">
+          <img src="/projects_images/agenda-contactos-react.png" alt="" className={styles.project} />
+          <div className={styles.tools}>
+            <div className={styles.projectName}>
+              <label htmlFor="" style={{ fontSize: "15px" }}>CONTACT AGENDA</label>
+            </div>
+            <div className={styles.toolsContainer}>
+              <div className={styles.tool}>
+                <label htmlFor="">HTML</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">REACT</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">CSS</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.imageContainer} data-aos="flip-right">
+          <img src="/projects_images/agenda-contactos-react.png" alt="" className={styles.project} />
+          <div className={styles.tools}>
+            <div className={styles.projectName}>
+              <label htmlFor="" style={{ fontSize: "15px" }}>CONTACT AGENDA</label>
+            </div>
+            <div className={styles.toolsContainer}>
+              <div className={styles.tool}>
+                <label htmlFor="">HTML</label>
+              </div>
+              <div className={styles.tool}>
+                <label htmlFor="">REACT</label>
               </div>
               <div className={styles.tool}>
                 <label htmlFor="">CSS</label>

@@ -44,10 +44,6 @@ const Menu = ({ switchTheme, theme }) => {
               <div>
                 <button onClick={switchTheme} className={styles.theme_button} role="button">{theme == "dark" ? <img src='/button_theme_logo/moon_icon.svg' /> : <img src='/button_theme_logo/sun_icon.svg' style={{ color: "white" }} />}</button>
               </div>
-              <div className={styles.links_buttons}>
-                <img src="/end_menu_images/github_link_logo.png" alt="" style={{ width: "23px" }} />
-                <img src="/end_menu_images/linkedin_link_logo.png" alt="" style={{ width: "23px" }} />
-              </div>
             </div>
           </div>
         </div>

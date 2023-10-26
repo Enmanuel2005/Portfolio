@@ -1,0 +1,14 @@
+.experience_info_container {
+    border: grey;
+    border-style: groove;
+    padding: 10px;
+}
+
+.tittle_experience_container {
+    margin-bottom: 20px;
+
+}
+
+.tittle_experience_container>h2 {
+    font-size: 37.5px;
+}

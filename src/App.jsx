@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Menu from './components/Menu'
 import useLocalStorage from 'use-local-storage'
+import * as emailjs from "emailjs-com"
 
 
 

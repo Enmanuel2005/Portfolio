@@ -31,6 +31,7 @@ textarea{
 
 textarea::placeholder{
     color: white;
+    opacity: 0.4;
     font-size: 20px;
 }
 
@@ -63,6 +64,7 @@ textarea::placeholder{
 
 .dataInputs > input::placeholder{
     color: rgb(255, 255, 255);
+    opacity: 0.4;
 }
 
 .textareaButton{
@@ -110,4 +112,8 @@ textarea::placeholder{
     background-color: rgb(255, 255, 255);
     border-radius: 20%;
     cursor: pointer;
+}
+
+.custom-button{
+    color: red !important;
 }

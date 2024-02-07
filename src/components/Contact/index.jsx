@@ -2,8 +2,16 @@ import React from 'react'
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import styles from './contact.module.css'
+import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
+
+  function validateEmail(emailToValidate) {
+    let emailStructure = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+
+    return emailStructure.test(emailToValidate)
+  }
 
   const formRef = useRef();
   const nameRef = useRef();
@@ -11,9 +19,10 @@ const Contact = () => {
   const emailRef = useRef();
 
   const sendEmail = (e) => {
+    e.preventDefault()
 
     emailjs.init("DX3a4GDcYgfbHOB3h")
-    
+
     const name = nameRef.current.value;
     const email = emailRef.current.value;
     const message = messageRef.current.value;
@@ -28,16 +37,62 @@ const Contact = () => {
       message: message
     }
 
-    emailjs.send(serviceID, templateID, paramsEmail)
-      .then((response) => {
-        console.log("Correo enviado", response);
-        nameRef.current.value = ''
-        emailRef.current.value = ''
-        messageRef.current.value = ''
+    if (nameRef.current.value.trim() === '' || emailRef.current.value.trim() === '' || messageRef.current.value.trim() === '') {
+      Swal.fire({
+        title: 'Error',
+        text: 'Complete the campus.',
+        icon: 'error',
+        iconColor: 'red',
+        width: 400,
+        padding: '1em',
+        color: 'red',
+        background: 'white',
+        confirmButtonText: 'Continue',
+        customClass: {
+          confirmButtonText: 'custom-button'
+        }
       })
-      .catch((error) => {
-        console.log("Error", error);
+    }
+
+    else if (!validateEmail(email)){
+      Swal.fire({
+        title: 'Error',
+        text: 'Log in to Valid Mail.',
+        icon: 'error',
+        iconColor: 'red',
+        width: 400,
+        padding: '1em',
+        color: 'red',
+        background: 'white',
+        confirmButtonText: 'Continue',
+        customClass: {
+          confirmButtonText: 'custom-button'
+        }
       })
+    }
+
+    else {
+      emailjs.send(serviceID, templateID, paramsEmail)
+        .then(() => {
+          Swal.fire({
+            title: 'Success',
+            text: 'Message Send!',
+            icon: 'success',
+            iconColor: 'green',
+            width: 400,
+            padding: '1em',
+            color: 'green',
+            background: 'white',
+            confirmButtonText: 'Continue',
+            customClass: {
+              confirmButton: 'custom-button'
+            }
+          })
+          nameRef.current.value = ''
+          emailRef.current.value = ''
+          messageRef.current.value = ''
+        })
+    }
   }
 
   return (
@@ -56,8 +111,8 @@ const Contact = () => {
         </div>
       </form>
       <div className={styles.links_buttons}>
-        {/* <img className={styles.webs_links_git} src="/end_menu_images/github_link_logo.svg" alt="" style={{ width: "40px" }} />
-        <img className={styles.webs_links_linkedin} src="/end_menu_images/linkedin_link_logo.svg" alt="" style={{ width: "40px" }} /> */}
+        <img className={styles.webs_links_git} src="/end_menu_images/github_link_logo.svg" alt="" style={{ width: "40px" }} />
+        <img className={styles.webs_links_linkedin} src="/end_menu_images/linkedin_link_logo.svg" alt="" style={{ width: "40px" }} />
       </div>
     </div>
   )

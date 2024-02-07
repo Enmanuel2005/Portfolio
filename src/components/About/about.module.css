@@ -53,15 +53,14 @@
 
 .image_about {
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
     background-color:rgb(255, 0, 0);
     border-radius: 10px;
     width: 800px;
-    height: 300px;
+    /* height: 300px; */
     transform: rotate(10deg);
-    padding: 50px;
+    padding: 100px;
 }
 
 .image_about_2 {
@@ -87,7 +86,7 @@ p {
 .about_info_container {
     border-color: grey;
     border-style: groove;
-    padding: 50px;
+    padding: 130px;
     height: 80%;
     display: flex;
     gap: 50px;

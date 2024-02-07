@@ -60,8 +60,26 @@ p {
 
 .section_about{
     padding: 30px;
+    height: 100vh;
 }
 
 #section_contact{
     padding: 70px;
+}
+
+#section_skills{
+    height: 100vh;
+}
+
+#section_projects{
+    height: 100vh;
+    margin-top: 60px;
+}
+
+#section_experience{
+    height: 100vh;
+}
+
+#section_contact{
+    height: 100vh;
 }
